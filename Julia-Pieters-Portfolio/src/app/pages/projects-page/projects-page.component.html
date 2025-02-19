@@ -1,0 +1,31 @@
+<div class="container mx-auto py-12">
+  <h1 class="text-4xl font-bold text-center mb-8 text-gray-800 custom-title">
+  Mijn Projecten
+</h1>
+
+  <div class="grid grid-cols-3 gap-6 px-6">
+    <div class="relative bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer project-card" (click)="openProject('project1')">
+      <img src="../../../assets/project1-logo.png" alt="Project 1" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h2 class="text-xl font-semibold text-gray-800">OTS-website voor Nedbase</h2>
+        <p class="text-gray-500">2025</p>
+      </div>
+    </div>
+
+    <div class="relative bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer project-card" (click)="openProject('project2')">
+      <img src="../../../assets/project2-logo.png" alt="Project 2" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h2 class="text-xl font-semibold text-gray-800">Minor Interface & UX Design</h2>
+        <p class="text-gray-500">2025</p>
+      </div>
+    </div>
+
+    <div class="relative bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer project-card" (click)="openProject('project3')">
+      <img src="../../../assets/project3-logo.png" alt="Project 3" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h2 class="text-xl font-semibold text-gray-800">Rijkswaterstaat, Krammersluizen</h2>
+        <p class="text-gray-500">2024</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,68 @@
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #CCDBE9;
+  font-family: "Funnel Display", sans-serif;
+}
+.hero-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  display: flex;
+  max-width: 900px;
+  width: 100%;
+  font-family: "Funnel Display", sans-serif;
+}
+.hero-text {
+  width: 50%;
+  font-family: "Funnel Display", sans-serif;
+}
+.hero-image-container {
+  width: 50%;
+  position: relative;
+  font-family: "Funnel Display", sans-serif;
+}
+.hero-image-container img {
+  width: 100%;
+  border-bottom-left-radius: 50%;
+  font-family: "Funnel Display", sans-serif;
+}
+.btn-projects {
+  background-color: #CCDBE9;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 20px;
+  font-family: "Funnel Display", sans-serif;
+}
+
+.btn-projects:hover {
+  background-color: #DDE4ED;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 20px;
+  font-family: "Funnel Display", sans-serif;
+}
+.btn-linkedin {
+  background-color: #CCDBE9;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-family: "Funnel Display", sans-serif;
+}
+
+.btn-linkedin:hover {
+  background-color: #DDE4ED;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-family: "Funnel Display", sans-serif;
+}
