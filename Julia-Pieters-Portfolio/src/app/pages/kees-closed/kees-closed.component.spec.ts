@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Project3Component } from './project3.component';
+import { KeesClosedComponent } from './kees-closed.component';
 
-describe('Project3Component', () => {
-  let component: Project3Component;
-  let fixture: ComponentFixture<Project3Component>;
+describe('KeesClosedComponent', () => {
+  let component: KeesClosedComponent;
+  let fixture: ComponentFixture<KeesClosedComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Project3Component]
+      imports: [KeesClosedComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Project3Component);
+    fixture = TestBed.createComponent(KeesClosedComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

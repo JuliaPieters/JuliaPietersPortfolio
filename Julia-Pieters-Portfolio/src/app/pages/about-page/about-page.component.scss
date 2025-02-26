@@ -1,0 +1,79 @@
+/* Algemene instellingen voor het body en html */
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Funnel Display", sans-serif;
+  background-color: white;
+}
+
+/* Container voor de pagina */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Titel */
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Afbeelding stijl */
+.about-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+/* Inhoud */
+.about-content {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+.about-content p {
+  margin-bottom: 20px;
+}
+
+/* Contact sectie */
+.contact-section {
+  margin-top: 40px;
+}
+
+.contact-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.contact-link {
+  color: #0066cc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+.portret-image{
+  width: 30%;  /* Pas de breedte aan naar wens */
+  height: 100%;  /* Houd de aspect ratio */
+  object-fit: cover;
+  border-radius: 10px; /* Optioneel: afgeronde hoeken */
+}

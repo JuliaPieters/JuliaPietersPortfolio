@@ -1,0 +1,26 @@
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+h1, h2, p {
+  font-family: "Funnel Display", sans-serif;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.custom-image-oud {
+  width: 50%;  /* Pas de breedte aan naar wens */
+  height: 100%;  /* Houd de aspect ratio */
+  object-fit: cover;
+  border-radius: 10px; /* Optioneel: afgeronde hoeken */
+}
+.custom-image-nieuw {
+  width: 50%;  /* Pas de breedte aan naar wens */
+  height: 100%;  /* Houd de aspect ratio */
+  object-fit: cover;
+  border-radius: 10px; /* Optioneel: afgeronde hoeken */
+}

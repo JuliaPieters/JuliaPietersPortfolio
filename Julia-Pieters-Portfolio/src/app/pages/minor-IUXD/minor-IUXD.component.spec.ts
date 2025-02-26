@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Project1Component } from './project1.component';
+import { MinorIUXDComponent } from './minor-IUXD.component';
 
-describe('Project1Component', () => {
-  let component: Project1Component;
-  let fixture: ComponentFixture<Project1Component>;
+describe('Project2Component', () => {
+  let component: MinorIUXDComponent;
+  let fixture: ComponentFixture<MinorIUXDComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Project1Component]
+      imports: [MinorIUXDComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Project1Component);
+    fixture = TestBed.createComponent(MinorIUXDComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

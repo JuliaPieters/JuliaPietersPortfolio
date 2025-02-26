@@ -1,31 +1,51 @@
-<div class="container mx-auto py-12">
-  <h1 class="text-4xl font-bold text-center mb-8 text-gray-800 custom-title">
-  Mijn Projecten
-</h1>
+  <div class="container">
+    <h1 class="text-4xl font-bold text-center mb-8 text-gray-800 custom-title">
+      Mijn Projecten
+    </h1>
+  </div>
 
   <div class="grid grid-cols-3 gap-6 px-6">
-    <div class="relative bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer project-card" (click)="openProject('project1')">
-      <img src="../../../assets/project1-logo.png" alt="Project 1" class="w-full h-48 object-cover">
+
+    <div class="relative bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer project-card" (click)="openProject('ots-website')">
+      <img src="../../../assets/otswebsite.png" alt="Project 1" class="border-image">
+
       <div class="p-4">
         <h2 class="text-xl font-semibold text-gray-800">OTS-website voor Nedbase</h2>
         <p class="text-gray-500">2025</p>
       </div>
     </div>
-
-    <div class="relative bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer project-card" (click)="openProject('project2')">
-      <img src="../../../assets/project2-logo.png" alt="Project 2" class="w-full h-48 object-cover">
+    <div class="relative bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer project-card" (click)="openProject('minor-IUXD')">
+      <img src="../../../assets/worm.jpg" alt="Project 2" class="border-image">
       <div class="p-4">
         <h2 class="text-xl font-semibold text-gray-800">Minor Interface & UX Design</h2>
         <p class="text-gray-500">2025</p>
       </div>
     </div>
-
-    <div class="relative bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer project-card" (click)="openProject('project3')">
-      <img src="../../../assets/project3-logo.png" alt="Project 3" class="w-full h-48 object-cover">
+    <div class="relative bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer project-card" (click)="openProject('rijkswaterstaat')">
+      <img src="../../../assets/krammersluis.jpg" alt="Project 3" class="border-image">
       <div class="p-4">
         <h2 class="text-xl font-semibold text-gray-800">Rijkswaterstaat, Krammersluizen</h2>
         <p class="text-gray-500">2024</p>
       </div>
     </div>
+    <div class="relative bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer project-card" (click)="openProject('anxiety-ally')">
+      <img src="../../../assets/anxietyally.png" alt="Project 4" class="border-image-anxietyally">
+      <div class="p-4">
+        <h2 class="text-xl font-semibold text-gray-800">AnxietyAlly</h2>
+        <p class="text-gray-500">2024</p>
+      </div>
+    </div>
+    <div class="relative bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer project-card" (click)="openProject('pontes')">
+      <img src="../../../assets/1631362549919.jpeg" alt="Project 5" class="border-image-pontes">
+      <div class="p-4">
+        <h2 class="text-xl font-semibold text-gray-800">Scholengroep de Pontes</h2>
+        <p class="text-gray-500">2023</p>
+      </div>
   </div>
-</div>
+    <div class="relative bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer project-card" (click)="openProject('kees-closed')">
+      <img src="../../../assets/keesclosed.jpg" alt="Project 5" class="border-image">
+      <div class="p-4">
+        <h2 class="text-xl font-semibold text-gray-800">Kees Closed</h2>
+        <p class="text-gray-500">2023</p>
+      </div>
+    </div>
