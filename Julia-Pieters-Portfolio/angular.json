@@ -110,5 +110,8 @@
       }
     }
   },
-  "defaultProject": "Julia-Pieters-Portfolio"
+  "defaultProject": "Julia-Pieters-Portfolio",
+  "cli": {
+    "analytics": false
+  }
 }

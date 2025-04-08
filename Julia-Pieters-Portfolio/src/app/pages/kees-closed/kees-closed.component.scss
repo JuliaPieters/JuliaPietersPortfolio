@@ -1,0 +1,28 @@
+.custom-image {
+  width: 100%;  /* Pas de breedte aan naar wens */
+  height: 100%;  /* Houd de aspect ratio */
+  object-fit: cover;
+  border-radius: 10px; /* Optioneel: afgeronde hoeken */
+}
+.custom-image-1 {
+  width: 20%;  /* Pas de breedte aan naar wens */
+  height: 20%;  /* Houd de aspect ratio */
+  object-fit: cover;
+  border-radius: 10px; /* Optioneel: afgeronde hoeken */
+}
+.custom-image-2 {
+  width: 35%;  /* Pas de breedte aan naar wens */
+  height: 35%;  /* Houd de aspect ratio */
+  object-fit: cover;
+  border-radius: 10px; /* Optioneel: afgeronde hoeken */
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
