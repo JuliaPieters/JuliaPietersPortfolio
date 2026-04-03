@@ -37,7 +37,7 @@
 
 .project-card img {
   width: 100%;
-  height: 180px; /* Iets grotere afbeelding */
+  height: 180px;
   border-radius: 8px;
   object-fit: cover;
 }
@@ -58,16 +58,15 @@
 
 }
 
-/* Responsiviteit voor kleinere schermen */
 @media (max-width: 1024px) {
   .grid {
-    grid-template-columns: repeat(2, minmax(280px, 1fr)); /* 2 kolommen bij kleinere schermen */
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
     gap: 1.5rem;
   }
 }
 
 @media (max-width: 600px) {
   .grid {
-    grid-template-columns: repeat(1, 1fr); /* 1 kolom voor mobiele schermen */
+    grid-template-columns: repeat(1, 1fr);
   }
 }

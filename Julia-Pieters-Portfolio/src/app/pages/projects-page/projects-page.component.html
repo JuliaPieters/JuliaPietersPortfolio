@@ -5,7 +5,22 @@
   </div>
 
   <div class="grid grid-cols-3 gap-6 px-6">
+    <div class="relative bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer project-card" (click)="openProject('afstudeeropdracht')">
+      <img src="">
 
+      <div class="p-4">
+        <h2 class="text-xl font-semibold text-gray-800">Afstudeeropdracht bij Nedbase Digital Agency</h2>
+        <p class="text-gray-500">2026</p>
+      </div>
+    </div>
+    <div class="relative bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer project-card" (click)="openProject('ek-zeilen')">
+      <img src="/assets/ekzeilen.png">
+
+      <div class="p-4">
+        <h2 class="text-xl font-semibold text-gray-800">Micro website voor het EK zeilen</h2>
+        <p class="text-gray-500">2025</p>
+      </div>
+    </div>
     <div class="relative bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer project-card" (click)="openProject('ots-website')">
       <img src="/assets/otswebsite.png" alt="Project 1" class="border-image">
 
