@@ -1,36 +1,47 @@
-
-/* Algemene styling voor de navigatiebalk */
 .navbar {
-  background-color: #CCDBE9;
-  overflow: hidden;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2ecf4;
   display: flex;
-  justify-content: center; /* Zorgt ervoor dat de links in het midden staan */
-  align-items: center; /* Centreert de links verticaal */
-  height: 60px; /* Pas de hoogte van de navbar aan */
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding: 0 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 }
 
-/* Stijl voor de navigatielinks */
-.nav-link {
-  color: white;
-  padding: 14px 20px;
+.nav-brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1e3a5f;
+  letter-spacing: 0.08em;
   text-decoration: none;
-  font-size: 18px;
-  transition: background-color 0.3s;
-  margin: 0 20px; /* Zorgt voor extra ruimte tussen de knoppen */
-  font-family: "Funnel Display", sans-serif;
 }
 
-/* Hover-effect */
+.nav-links {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.nav-link {
+  color: #5a6a7a;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
 .nav-link:hover {
-  background-color: #DDE4ED;
-  color: white;
-  border-radius: 5px;
-  font-family: "Funnel Display", sans-serif;
+  background-color: #f0f6fb;
+  color: #1e3a5f;
 }
 
-/* Stijl voor de actieve link */
 .nav-link.active {
-  background-color: #4caf50;
-  border-radius: 5px;
-  font-family: "Funnel Display", sans-serif;
+  background-color: #CCDBE9;
+  color: #1e3a5f;
+  font-weight: 600;
 }

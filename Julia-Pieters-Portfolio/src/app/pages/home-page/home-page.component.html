@@ -1,29 +1,16 @@
-<html lang="nl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Page</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
 <div class="hero-container">
   <div class="hero-card">
     <div class="hero-text">
-      <h4 class="text-yellow-500 font-semibold">ICT student</h4>
-      <h1 class="text-4xl font-bold mt-2">Hallo, mijn naam <br> is Julia Pieters</h1>
-      <p class="text-gray-600 mt-4">Ik zit in het vierde jaar van de opleiding HBO-ICT aan de HZ University Of Applied Sciences</p>
-      <div class="mt-6">
-        <button class="btn-projects" (click)="openProjects()">Projects</button>
-        <button class="btn-linkedin" (click)="navigateToLinkedIn()">LinkedIn</button>
+      <span class="hero-label">ICT Student</span>
+      <h1>Hallo, mijn naam <br>is Julia Pieters</h1>
+      <p>Ik zit in het vierde jaar van de opleiding HBO-ICT aan de HZ University Of Applied Sciences</p>
+      <div class="hero-actions">
+        <button class="btn-primary" (click)="openProjects()">Projecten bekijken</button>
+        <button class="btn-secondary" (click)="navigateToLinkedIn()">LinkedIn</button>
       </div>
     </div>
     <div class="hero-image-container">
-      <div class="hero-image-container">
-        <img ngSrc="assets/Julia-portret.jpg" alt="Julia Pieters" class="w-full rounded-lg shadow-lg object-cover"
-             height="1333" width="2000">
-      </div>
+      <img ngSrc="assets/Julia-portret.jpg" alt="Julia Pieters" class="hero-image" height="1333" width="2000">
     </div>
   </div>
 </div>
-</body>
-</html>

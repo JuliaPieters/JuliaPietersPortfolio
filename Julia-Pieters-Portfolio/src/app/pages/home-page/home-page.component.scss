@@ -2,78 +2,122 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #CCDBE9; /* Terug naar jouw originele blauwe kleur */
-  padding: 20px;
+  min-height: calc(100vh - 64px);
+  background-color: #CCDBE9;
+  padding: 2rem;
 }
 
 .hero-card {
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 20px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  padding: 40px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+  padding: 3rem;
   display: flex;
-  max-width: 1000px;
+  gap: 3rem;
+  max-width: 960px;
   width: 100%;
   align-items: center;
 }
 
+.hero-label {
+  display: inline-block;
+  background-color: #CCDBE9;
+  color: #1e3a5f;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 4px 14px;
+  border-radius: 100px;
+  margin-bottom: 1rem;
+}
+
 .hero-text {
-  width: 50%;
-  padding-right: 20px;
+  flex: 1;
 }
 
 .hero-text h1 {
   font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #1a1a2e;
+  margin: 0.5rem 0 1rem;
 }
 
 .hero-text p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #333;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #5a6a7a;
+  margin-bottom: 2rem;
 }
 
-.hero-buttons {
-  margin-top: 20px;
-}
-
-.hero-image-container {
-  width: 100%;
+.hero-actions {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-.hero-image-container img {
-  width: 100%;
-  max-width: 480px; /* Grotere maximale breedte */
-  height: auto;
-  border-bottom-left-radius: 50% 50%;
-  border-top-right-radius: 20px;
-  object-fit: cover;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-
-/* Knoppen in jouw originele blauwe kleur */
-.btn-projects, .btn-linkedin {
-  background-color: #CCDBE9;
-  color: black;
+.btn-primary {
+  background-color: #1e3a5f;
+  color: #ffffff;
   padding: 12px 24px;
   border-radius: 8px;
   border: none;
-  font-size: 1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
   cursor: pointer;
-  transition: 0.3s;
-  text-transform: uppercase;
+  transition: background-color 0.2s;
+  font-family: "Funnel Display", sans-serif;
+
+  &:hover {
+    background-color: #162d4a;
+  }
 }
 
-.btn-projects:hover, .btn-linkedin:hover {
-  background-color: #B5C8D9; /* Iets donkerder blauw voor hover effect */
+.btn-secondary {
+  background-color: transparent;
+  color: #1e3a5f;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 2px solid #CCDBE9;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: "Funnel Display", sans-serif;
+
+  &:hover {
+    background-color: #CCDBE9;
+  }
 }
 
-.btn-projects {
-  margin-right: 15px;
+.hero-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .hero-card {
+    flex-direction: column-reverse;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .hero-text h1 {
+    font-size: 1.9rem;
+  }
+
+  .hero-image {
+    max-width: 260px;
+  }
 }

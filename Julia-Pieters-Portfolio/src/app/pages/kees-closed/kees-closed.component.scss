@@ -1,28 +1,18 @@
-.custom-image {
-  width: 100%;  /* Pas de breedte aan naar wens */
-  height: 100%;  /* Houd de aspect ratio */
-  object-fit: cover;
-  border-radius: 10px; /* Optioneel: afgeronde hoeken */
-}
-.custom-image-1 {
-  width: 20%;  /* Pas de breedte aan naar wens */
-  height: 20%;  /* Houd de aspect ratio */
-  object-fit: cover;
-  border-radius: 10px; /* Optioneel: afgeronde hoeken */
-}
-.custom-image-2 {
-  width: 35%;  /* Pas de breedte aan naar wens */
-  height: 35%;  /* Houd de aspect ratio */
-  object-fit: cover;
-  border-radius: 10px; /* Optioneel: afgeronde hoeken */
-}
-.container {
-  max-width: 900px;
-  margin: auto;
+.kc-characters {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-end;
+  margin-bottom: 1.25rem;
 }
 
-.video-container {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
+.kc-char-small {
+  width: 80px;
+  height: auto;
+  border-radius: 6px;
+}
+
+.kc-char-medium {
+  width: 140px;
+  height: auto;
+  border-radius: 6px;
 }

@@ -1,67 +1,69 @@
-  <div class="container">
-    <h1 class="text-4xl font-bold text-center mb-8 text-gray-800 custom-title">
-      Mijn Projecten
-    </h1>
+<div class="projects-page">
+  <h1 class="page-title">Mijn Projecten</h1>
+
+  <div class="projects-grid">
+    <div class="project-card" (click)="openProject('afstudeeropdracht')">
+      <div class="project-image-placeholder">Afstudeeropdracht</div>
+      <div class="project-info">
+        <h2>Afstudeeropdracht bij Nedbase Digital Agency</h2>
+        <span class="project-year">2026</span>
+      </div>
+    </div>
+
+    <div class="project-card" (click)="openProject('ek-zeilen')">
+      <img src="assets/ekzeilen.png" alt="Microsite EK Zeilen">
+      <div class="project-info">
+        <h2>Micro website voor het EK zeilen</h2>
+        <span class="project-year">2025</span>
+      </div>
+    </div>
+
+    <div class="project-card" (click)="openProject('ots-website')">
+      <img src="assets/otswebsite.png" alt="OTS Website voor Nedbase">
+      <div class="project-info">
+        <h2>OTS-website voor Nedbase</h2>
+        <span class="project-year">2025</span>
+      </div>
+    </div>
+
+    <div class="project-card" (click)="openProject('minor-IUXD')">
+      <img src="assets/worm.jpg" alt="Minor Interface & UX Design">
+      <div class="project-info">
+        <h2>Minor Interface & UX Design</h2>
+        <span class="project-year">2025</span>
+      </div>
+    </div>
+
+    <div class="project-card" (click)="openProject('rijkswaterstaat')">
+      <img src="assets/krammersluis.jpg" alt="Rijkswaterstaat Krammersluizen">
+      <div class="project-info">
+        <h2>Rijkswaterstaat, Krammersluizen</h2>
+        <span class="project-year">2024</span>
+      </div>
+    </div>
+
+    <div class="project-card" (click)="openProject('anxiety-ally')">
+      <img src="assets/anxietyally.png" alt="AnxietyAlly app">
+      <div class="project-info">
+        <h2>AnxietyAlly</h2>
+        <span class="project-year">2024</span>
+      </div>
+    </div>
+
+    <div class="project-card" (click)="openProject('pontes')">
+      <img src="assets/1631362549919.jpeg" alt="Scholengroep de Pontes">
+      <div class="project-info">
+        <h2>Scholengroep de Pontes</h2>
+        <span class="project-year">2023</span>
+      </div>
+    </div>
+
+    <div class="project-card" (click)="openProject('kees-closed')">
+      <img src="assets/keesclosed.jpg" alt="Kees Closed computerspel">
+      <div class="project-info">
+        <h2>Kees Closed</h2>
+        <span class="project-year">2023</span>
+      </div>
+    </div>
   </div>
-
-  <div class="grid grid-cols-3 gap-6 px-6">
-    <div class="relative bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer project-card" (click)="openProject('afstudeeropdracht')">
-      <img src="">
-
-      <div class="p-4">
-        <h2 class="text-xl font-semibold text-gray-800">Afstudeeropdracht bij Nedbase Digital Agency</h2>
-        <p class="text-gray-500">2026</p>
-      </div>
-    </div>
-    <div class="relative bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer project-card" (click)="openProject('ek-zeilen')">
-      <img src="/assets/ekzeilen.png">
-
-      <div class="p-4">
-        <h2 class="text-xl font-semibold text-gray-800">Micro website voor het EK zeilen</h2>
-        <p class="text-gray-500">2025</p>
-      </div>
-    </div>
-    <div class="relative bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer project-card" (click)="openProject('ots-website')">
-      <img src="/assets/otswebsite.png" alt="Project 1" class="border-image">
-
-      <div class="p-4">
-        <h2 class="text-xl font-semibold text-gray-800">OTS-website voor Nedbase</h2>
-        <p class="text-gray-500">2025</p>
-      </div>
-    </div>
-    <div class="relative bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer project-card" (click)="openProject('minor-IUXD')">
-      <img src="assets/worm.jpg" alt="Project 2" class="border-image">
-      <div class="p-4">
-        <h2 class="text-xl font-semibold text-gray-800">Minor Interface & UX Design</h2>
-        <p class="text-gray-500">2025</p>
-      </div>
-    </div>
-    <div class="relative bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer project-card" (click)="openProject('rijkswaterstaat')">
-      <img src="assets/krammersluis.jpg" alt="Project 3" class="border-image">
-      <div class="p-4">
-        <h2 class="text-xl font-semibold text-gray-800">Rijkswaterstaat, Krammersluizen</h2>
-        <p class="text-gray-500">2024</p>
-      </div>
-    </div>
-    <div class="relative bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer project-card" (click)="openProject('anxiety-ally')">
-      <img src="assets/anxietyally.png" alt="Project 4" class="border-image-anxietyally">
-      <div class="p-4">
-        <h2 class="text-xl font-semibold text-gray-800">AnxietyAlly</h2>
-        <p class="text-gray-500">2024</p>
-      </div>
-    </div>
-    <div class="relative bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer project-card" (click)="openProject('pontes')">
-      <img src="assets/1631362549919.jpeg" alt="Project 5" class="border-image-pontes">
-      <div class="p-4">
-        <h2 class="text-xl font-semibold text-gray-800">Scholengroep de Pontes</h2>
-        <p class="text-gray-500">2023</p>
-      </div>
-  </div>
-    <div class="relative bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer project-card" (click)="openProject('kees-closed')">
-      <img src="assets/keesclosed.jpg" alt="Project 5" class="border-image">
-      <div class="p-4">
-        <h2 class="text-xl font-semibold text-gray-800">Kees Closed</h2>
-        <p class="text-gray-500">2023</p>
-      </div>
-    </div>
-  </div>
+</div>

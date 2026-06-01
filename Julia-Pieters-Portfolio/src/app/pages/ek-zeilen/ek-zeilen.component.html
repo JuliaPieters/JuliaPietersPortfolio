@@ -1,79 +1,67 @@
-<div class="container mx-auto py-12 px-6 text-gray-800">
-  <h1 class="text-4xl font-bold text-center text-gray-900 mb-6">Microsite EK Zeilen</h1>
+<div class="project-detail">
+  <h1 class="project-detail-title">Microsite EK Zeilen</h1>
 
-  <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
-    <div class="p-6">
+  <div class="project-detail-card">
+    <p>
+      Dit project heb ik uitgevoerd bij <strong>Nedbase Digital Agency</strong> tijdens mijn meewerkstage, waarbij ik verantwoordelijk was voor het ontwerpen en realiseren van een microsite voor het EK Zeilen.
+    </p>
 
-      <p class="text-lg mb-4">
-        Dit project heb ik uitgevoerd bij
-        <span class="font-semibold">Nedbase Digital Agency</span> tijdens mijn meewerkstage, waarbij ik verantwoordelijk was voor het ontwerpen en realiseren van een microsite voor het EK Zeilen.
-      </p>
+    <h2>Introductie</h2>
+    <p>
+      Voor het EK Zeilen was er behoefte aan een vernieuwde website waarop bezoekers eenvoudig informatie kunnen vinden over het evenement. De huidige website werd voornamelijk gebruikt door zeilers die snel toegang willen tot praktische informatie. Hierdoor lag de focus minder op visueel design en meer op gebruiksvriendelijkheid en vindbaarheid van content.
+    </p>
+    <p>
+      In samenwerking met de stakeholder is de bestaande website geanalyseerd en is bepaald hoe de nieuwe structuur eruit moest komen te zien. Hierbij stond centraal hoe informatie zo duidelijk en efficiënt mogelijk gepresenteerd kan worden.
+    </p>
 
-      <h2 class="text-2xl font-semibold text-gray-900 mb-2">Introductie</h2>
-      <p class="text-gray-700 mb-4">
-        Voor het EK Zeilen was er behoefte aan een vernieuwde website waarop bezoekers eenvoudig informatie kunnen vinden over het evenement. De huidige website werd voornamelijk gebruikt door zeilers die snel toegang willen tot praktische informatie. Hierdoor lag de focus minder op visueel design en meer op gebruiksvriendelijkheid en vindbaarheid van content.
-      </p>
+    <h2>Ontwerp</h2>
+    <p>
+      Omdat er geen vaste huisstijl beschikbaar was, heb ik zelf een visuele richting bepaald. Ik heb meerdere ontwerpen gemaakt in Figma en deze iteratief verbeterd op basis van feedback van het designteam. In eerste instantie bleek het ontwerp te statisch en visueel te leeg, waarna ik contrast, typografie en visuele elementen heb aangepast.
+    </p>
 
-      <p class="text-gray-700 mb-4">
-        In samenwerking met de stakeholder is de bestaande website geanalyseerd en is bepaald hoe de nieuwe structuur eruit moest komen te zien. Hierbij stond centraal hoe informatie zo duidelijk en efficiënt mogelijk gepresenteerd kan worden.
-      </p>
+    <img src="assets/ek-ontwerp2.png" alt="Verbeterd ontwerp EK zeilen">
 
-      <h2 class="text-2xl font-semibold text-gray-900 mb-2">Ontwerp</h2>
-      <p class="text-gray-700 mb-4">
-        Omdat er geen vaste huisstijl beschikbaar was, heb ik zelf een visuele richting bepaald. Ik heb meerdere ontwerpen gemaakt in Figma en deze iteratief verbeterd op basis van feedback van het designteam. In eerste instantie bleek het ontwerp te statisch en visueel te leeg, waarna ik contrast, typografie en visuele elementen heb aangepast.
-      </p>
+    <p>
+      Uiteindelijk heb ik gekozen voor een andere aanpak: een onepager. Door de beperkte hoeveelheid content bleek dit een gebruiksvriendelijke oplossing waarbij bezoekers niet onnodig hoeven door te klikken. Dit ontwerp werd positief ontvangen en vormde de basis voor de realisatie.
+    </p>
 
-      <img src="../../../assets/ek-ontwerp2.png" alt="Verbeterd ontwerp EK zeilen" class="mb-4 rounded-lg shadow">
+    <img src="assets/ek-definitief.png" alt="Definitief ontwerp EK zeilen">
+    <img src="assets/ek-definitief2.png" alt="Definitief ontwerp EK zeilen, tweede scherm">
 
-      <p class="text-gray-700 mb-4">
-        Uiteindelijk heb ik gekozen voor een andere aanpak: een onepager. Door de beperkte hoeveelheid content bleek dit een gebruiksvriendelijke oplossing waarbij bezoekers niet onnodig hoeven door te klikken. Dit ontwerp werd positief ontvangen en vormde de basis voor de realisatie.
-      </p>
+    <h2>Implementatie</h2>
+    <p>
+      Voor de realisatie van de website heb ik gebruikgemaakt van het Astro framework. Dit framework maakt het mogelijk om snelle websites te bouwen door een combinatie van statische en dynamische rendering. De website is opgebouwd als een onepager met herbruikbare componenten zoals een header, footer en contentblokken.
+    </p>
+    <p>
+      Om content dynamisch te maken, heb ik WordPress ingezet als backend. Via de WordPress REST API wordt content opgehaald en weergegeven op de website. Hiervoor zijn Custom Post Types aangemaakt, zodat stakeholders eenvoudig content kunnen beheren zonder tussenkomst van een developer.
+    </p>
 
-      <img src="../../../assets/ek-definitief.png" alt="Definitief ontwerp EK zeilen" class="mb-4 rounded-lg shadow">
-      <img src="../../../assets/ek-definitief2.png" alt="Definitief ontwerp EK zeilen" class="mb-4 rounded-lg shadow">
+    <img src="assets/ek-diagram.png" alt="CPT structuur diagram">
 
+    <p>
+      Tijdens de ontwikkeling heb ik mijn code verder geoptimaliseerd door gebruik te maken van Island Architecture. Hierbij wordt alleen JavaScript geladen voor interactieve onderdelen, wat zorgt voor betere performance. Daarnaast heb ik het MVC design pattern toegepast om de structuur van de applicatie te verbeteren en verantwoordelijkheden te scheiden.
+    </p>
+    <p>
+      Ook heb ik onderzoek gedaan naar het gebruik van een iframe voor het tonen van externe resultaten. Hieruit bleek dat dit nadelen heeft op het gebied van performance, toegankelijkheid en beveiliging. Daarom heb ik geadviseerd om in de toekomst een eigen API te ontwikkelen als alternatief.
+    </p>
 
-      <h2 class="text-2xl font-semibold text-gray-900 mb-2">Implementatie</h2>
-      <p class="text-gray-700 mb-4">
-        Voor de realisatie van de website heb ik gebruikgemaakt van het Astro framework. Dit framework maakt het mogelijk om snelle websites te bouwen door een combinatie van statische en dynamische rendering. De website is opgebouwd als een onepager met herbruikbare componenten zoals een header, footer en contentblokken.
-      </p>
+    <h2>Conclusie</h2>
+    <p>
+      Dit project laat zien hoe een relatief kleine website toch vraagt om doordachte keuzes op het gebied van ontwerp, techniek en structuur. Door te kiezen voor een onepager, dynamische content via WordPress en een duidelijke architectuur, is een gebruiksvriendelijke en onderhoudbare oplossing gerealiseerd.
+    </p>
+    <p>
+      Daarnaast heeft het project inzicht gegeven in hoe technische keuzes, zoals frameworks en architectuurpatronen, direct invloed hebben op performance, schaalbaarheid en samenwerking.
+    </p>
+    <p>
+      De site is te bekijken op <a href="https://ecj24.eu/" target="_blank" rel="noopener noreferrer">ecj24.eu</a>.
+    </p>
 
-      <p class="text-gray-700 mb-4">
-        Om content dynamisch te maken, heb ik WordPress ingezet als backend. Via de WordPress REST API wordt content opgehaald en weergegeven op de website. Hiervoor zijn Custom Post Types aangemaakt, zodat stakeholders eenvoudig content kunnen beheren zonder tussenkomst van een developer.
-      </p>
-
-      <img src="../../../assets/ek-diagram.png" alt="CPT structuur diagram" class="mb-4 rounded-lg shadow">
-
-      <p class="text-gray-700 mb-4">
-        Tijdens de ontwikkeling heb ik mijn code verder geoptimaliseerd door gebruik te maken van Island Architecture. Hierbij wordt alleen JavaScript geladen voor interactieve onderdelen, wat zorgt voor betere performance. Daarnaast heb ik het MVC design pattern toegepast om de structuur van de applicatie te verbeteren en verantwoordelijkheden te scheiden.
-      </p>
-
-      <p class="text-gray-700 mb-4">
-        Ook heb ik onderzoek gedaan naar het gebruik van een iframe voor het tonen van externe resultaten. Hieruit bleek dat dit nadelen heeft op het gebied van performance, toegankelijkheid en beveiliging. Daarom heb ik geadviseerd om in de toekomst een eigen API te ontwikkelen als alternatief.
-      </p>
-
-      <h2 class="text-2xl font-semibold text-gray-900 mb-2">Conclusie</h2>
-      <p class="text-gray-700 mb-4">
-        Dit project laat zien hoe een relatief kleine website toch vraagt om doordachte keuzes op het gebied van ontwerp, techniek en structuur. Door te kiezen voor een onepager, dynamische content via WordPress en een duidelijke architectuur, is een gebruiksvriendelijke en onderhoudbare oplossing gerealiseerd.
-      </p>
-
-      <p class="text-gray-700 mb-4">
-        Daarnaast heeft het project inzicht gegeven in hoe technische keuzes, zoals frameworks en architectuurpatronen, direct invloed hebben op performance, schaalbaarheid en samenwerking.
-      </p>
-
-      <p class="text-gray-700 mb-4">
-        De site is te bekijken op https://ecj24.eu/
-      </p>
-
-      <h2 class="text-2xl font-semibold text-gray-900 mb-2">Mijn ontwikkeling</h2>
-      <p class="text-gray-700 mb-4">
-        Tijdens dit project heb ik mij verder ontwikkeld in zowel design als development. Ik heb geleerd hoe ik feedback kan verwerken in iteratieve ontwerpen en hoe ik keuzes onderbouw op basis van gebruiksvriendelijkheid en technische haalbaarheid.
-      </p>
-
-      <p class="text-gray-700 mb-4">
-        Daarnaast heb ik ervaring opgedaan met het werken met Astro, het integreren van een WordPress backend via de REST API en het toepassen van architectuurprincipes zoals Island Architecture en MVC. Ook heb ik geleerd kritisch te kijken naar technische oplossingen en hier onderbouwd advies over te geven.
-      </p>
-
-    </div>
+    <h2>Mijn ontwikkeling</h2>
+    <p>
+      Tijdens dit project heb ik mij verder ontwikkeld in zowel design als development. Ik heb geleerd hoe ik feedback kan verwerken in iteratieve ontwerpen en hoe ik keuzes onderbouw op basis van gebruiksvriendelijkheid en technische haalbaarheid.
+    </p>
+    <p>
+      Daarnaast heb ik ervaring opgedaan met het werken met Astro, het integreren van een WordPress backend via de REST API en het toepassen van architectuurprincipes zoals Island Architecture en MVC. Ook heb ik geleerd kritisch te kijken naar technische oplossingen en hier onderbouwd advies over te geven.
+    </p>
   </div>
 </div>
